@@ -12,6 +12,12 @@ Environment for trial use of Terraform. Since tfenv is installed, you can use an
     ```
     git clone https://github.com/mtsalt/terraform-docker.git
     ```
+
+1. Go to repository directory
+    ```
+    cd terraform-docker
+    ```
+
 1. Start environment
     ```
     make start
@@ -28,7 +34,7 @@ Environment for trial use of Terraform. Since tfenv is installed, you can use an
     ```
     exit
     ```
-1.  Reconnect the Terraform environment
+1.  Reconnect to the Terraform environment
     ```
     make connect
     ```
@@ -37,5 +43,5 @@ Environment for trial use of Terraform. Since tfenv is installed, you can use an
     make stop
     ```
 
-### src directory
+### Mounted volume (bind mount)
 When you run the `make start` command, the `src` directory will be created automatically. This folder is mounted in the `/src` folder inside the container.
